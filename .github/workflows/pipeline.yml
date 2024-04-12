@@ -36,5 +36,7 @@ jobs:
         cache: 'npm'
     - name: Install Application
       run: npm install
+    - name: Install required browsers for Playwright
+      run: npx playwright install
     - name: Run UI tests
       run: npm run test:ui
