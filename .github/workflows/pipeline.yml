@@ -20,6 +20,8 @@ jobs:
       run: npm install
     - name: Run UNIT tests
       run: npm run test:unit
+    - name: Display SoftUni username
+      run: echo "netmasterbg"
 
   test_ui:
     runs-on: ubuntu-latest
