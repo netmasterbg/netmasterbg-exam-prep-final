@@ -34,5 +34,7 @@ jobs:
       with:
         node-version: 20.x
         cache: 'npm'
+    - name: Install Application
+      run: npm install
     - name: Run UI tests
       run: npm run test:ui
